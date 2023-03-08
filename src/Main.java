@@ -10,10 +10,6 @@ class Robot {
 
 }
 
-class Izgara {
-
-}
-
 class Engel {
 
 }

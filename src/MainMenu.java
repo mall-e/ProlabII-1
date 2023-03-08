@@ -24,7 +24,7 @@ public class MainMenu {
         btn2.setText("Problem 2");
         btn2.setBounds(275, 300, 90,40);
 
-        btnClicked();
+        btnClicked(fr);
 
         pnl.add(lb);
         pnl.add(btn);
@@ -36,11 +36,19 @@ public class MainMenu {
         fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    void btnClicked(){
+    void btnClicked(JFrame fr){
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Problem 1 tıklandı !!");
+                fr.setVisible(false);
+                Problem1Page page1 = null;
+                try {
+                    page1 = new Problem1Page();
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+                page1.fr.setVisible(true);
             }
         });
 
