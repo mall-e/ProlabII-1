@@ -44,7 +44,7 @@ public class MainMenu {
                 fr.setVisible(false);
                 Problem1Page page1 = null;
                 try {
-                    page1 = new Problem1Page();
+                    page1 = new Problem1Page(fr);
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
