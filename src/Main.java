@@ -1,17 +1,9 @@
 import java.io.IOException;
 
 public class Main {
-    static MainMenu menu;
+    static Uygulama menu;
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        menu = new MainMenu();
+        menu = new Uygulama();
     }
-}
-
-class Engel {
-
-}
-
-class Uygulama {
-
 }
